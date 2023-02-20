@@ -1,0 +1,80 @@
+:root{
+    --color-dark: rgb(14, 14, 14);
+    --color-dark2: rgb(32, 32, 32);
+    --color-dark3: rgb(22, 22, 22);
+    --color-white: #fff;
+    --color-green: rgb(103, 195, 80);
+    --color-green2: rgb(51, 149, 26);
+    --color-red: rgb(184, 40, 35);
+    --color-red2: rgb(146, 22, 17);
+    --color-purple: rgb(49, 2, 53);
+    --color-blue1: rgb(8, 107, 187);
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(45deg,rgb(14, 14, 14),rgb(32, 32, 32));
+}
+.principal{
+    background-color: rgba(32, 32, 32, 0.8);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 3rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 1rem;
+    border-radius: 20px;
+}
+.Email{
+    padding: 1rem;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+.Senha{
+    padding: 1rem;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+.btn_login{
+   background-color: dodgerblue;
+   border: none;
+   padding: 1rem;
+   width: 100%;
+   border-radius: 0,8rem;
+   transition: .5s ;
+   cursor: pointer;
+}
+
+.btn_login:hover{
+    background-color:var(--color-blue1);
+}
+
+h1{
+    font-family: monospace;
+    max-width: 25rem;
+    text-align: center;
+    margin: 4rem auto;
+    color: var(--color-green);
+}
+
+h1::after {
+    content: '|';
+    margin-left: 0.5rem;
+    opacity: 1;
+    animation: blink .7s infinite;
+    
+}
+@keyframes blink {
+    0%, 100%{ 
+         opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    
+}
+
